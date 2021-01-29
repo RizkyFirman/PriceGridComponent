@@ -22,11 +22,9 @@ body{
 }
 
 main{
-    position: absolute;
     width: 100%;
     height: auto;
     display: grid;
-    border-radius: 5px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.18);
 }
 
@@ -129,5 +127,10 @@ p{
 
     .join{
         grid-column: 1 / -1;
+    }
+    
+    footer{
+        position: absolute;
+        bottom: 0;
     }
 }
