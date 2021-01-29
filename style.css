@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cyan:hsl(179, 62%, 43%);
+    --bright-yellow:hsl(71, 73%, 54%);
+    --light-gray:hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --font-family:'Karla', sans-serif;
+    --font-size: 16px;
+}
+
+body{
+    font-family: var(--font-family);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light-gray);
+    padding: 30px;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: grid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+h2, h4{
+    font-weight: 700;
+}
+
+p{
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.join{
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.join h2{
+    color: var(--cyan);
+}
+
+.join h4{
+    margin-top: 2em;
+    color: var(--bright-yellow);
+}
+
+.join p{
+    margin-top: 1em;
+    color: var(--grayish-blue);
+}
+
+.pricing{
+    background-color: var(--cyan);
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #fff;
+}
+
+.pricing .special-p{
+    margin-top: 1em;
+    font-weight:200;
+}
+
+.pricing span{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pricing button{
+    margin-top: 1em;
+    cursor: pointer;
+    border: none;
+    background: var(--bright-yellow);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: #fff;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.18);
+}
+
+.whyus{
+    background-color: #4abebd;
+    padding: 1.5rem 1rem;
+    color: #fff;
+}
+
+.whyus ul{
+    margin-top: 1em;
+}
+
+.whyus li{
+    list-style-type: none;
+}
+
+.whyus li p{
+    font-weight: 200;
+}
+
+
+/* web version */
+
+@media screen and (min-width:700px){
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        width: 50%;
+        margin: 0 auto;
+        grid-template: 50% auto / 50% auto;
+    }
+
+    .join{
+        grid-column: 1 / -1;
+    }
+}
