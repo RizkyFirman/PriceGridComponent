@@ -62,7 +62,7 @@ p{
 
 .pricing{
     background-color: var(--cyan);
-    padding: 1.5rem 1rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -94,7 +94,7 @@ p{
 
 .whyus{
     background-color: #4abebd;
-    padding: 1.5rem 1rem;
+    padding: 2rem;
     color: #fff;
     border-radius: 0 0 10px 10px;
 }
@@ -137,10 +137,5 @@ p{
     }
     .whyus{
         border-radius: 0 0 10px 0px;
-    }
-    
-    footer{
-        position: absolute;
-        bottom: 0;
     }
 }
