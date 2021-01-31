@@ -28,13 +28,14 @@ main{
     box-shadow:0px 30px 20px rgba(0, 2, 133, 0.246);
 }
 
-h2, h4{
+h1, h2{
     font-weight: 700;
 }
 
 p{
     line-height: 1.6;
     font-weight: 400;
+    font-size: var(--font-size);
 }
 
 .join{
@@ -46,12 +47,12 @@ p{
     border-radius: 10px 10px 0px 0px;
 }
 
-.join h2{
+.join h1{
     color: var(--cyan);
 }
 
-.join h4{
-    margin-top: 2em;
+.join h2{
+    margin-top: 1em;
     color: var(--bright-yellow);
 }
 
@@ -68,18 +69,24 @@ p{
     flex-direction: column;
     color: #fff;
 }
-
-.pricing .special-p{
-    margin-top: 1em;
-    font-weight:200;
+.pricing .price{
+    display: flex;
+    align-items: center;
+    
+}
+.pricing .price .special-p{
+    color:rgba(255, 255, 255, 0.7);
 }
 
-.pricing span{
+.pricing .dollar-sign{
+    
+    margin-right: 1rem;
     font-size: 36px;
     font-weight: 700;
 }
 
-.pricing button{
+.pricing a{
+    text-align: center;
     margin-top: 1em;
     cursor: pointer;
     border: none;
@@ -104,12 +111,10 @@ p{
 }
 
 .whyus li{
+    margin: .5em 0;
     list-style-type: none;
 }
 
-.whyus li p{
-    font-weight: 200;
-}
 
 
 /* web version */
@@ -122,10 +127,11 @@ p{
         justify-content: center;
     }
     main{
-        width: 50%;
+        max-width: 800px;
         margin: 0 auto;
         grid-template: 50% auto / 50% auto;
     }
+
 
     .join{
         border-radius: 10px 10px 0 0;
